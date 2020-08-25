@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class PahlawanAdapter extends BaseAdapter {
     private Context context;
     private ArrayList<Pahlawan> pahlawanArrayList = new ArrayList<>();
@@ -52,7 +54,7 @@ public class PahlawanAdapter extends BaseAdapter {
     }
 
     private class ViewHolder {
-        private ImageView photo;
+        private CircleImageView photo;
         private TextView name, description;
 
         public ViewHolder(View itemView) {
